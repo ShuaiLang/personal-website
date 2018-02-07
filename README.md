@@ -1,3 +1,3 @@
 # personal-website
-A no brainer
-change 2 made
+A no brainer personal website.
+
