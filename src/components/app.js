@@ -1,9 +1,25 @@
 import React, { Component } from 'react';
 
-export default class App extends Component {
+export class AsPerson extends Component {
   render() {
     return (
-      <div>React simple starter</div>
+      <div>As a Person</div>
     );
   }
+}
+
+export class AppIndex extends Component {
+	render() {
+		return (
+			<div>index page</div>
+		);
+	}
+}
+
+export class AsProgrammer extends Component {
+	render() {
+		return (
+			<div>As a Programmer</div>
+		);
+	}
 }
