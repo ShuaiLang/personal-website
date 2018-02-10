@@ -7,7 +7,8 @@ import promise from 'redux-promise';
 import 'babel-core/register';
 import 'babel-polyfill';
 
-import { AppIndex, AsPerson, AsProgrammer }from './components/app';
+import { AppIndex, AsPerson, AsProgrammer } from './components/app';
+import PhotoGallery from './components/photo-gallery/photo_gallery';
 import reducers from './reducers';
 
 
@@ -19,8 +20,9 @@ ReactDOM.render(
     <BrowserRouter>
     	<div>
     		<Switch>
-	    		<Route path="/AsPerson" component={AsPerson} />
-	    		<Route path="/AsProgrammer" component={AsProgrammer}/>
+          <Route path="/person/photo" component={PhotoGallery} />
+	    		<Route path="/person" component={AsPerson} />
+	    		<Route path="/programmer" component={AsProgrammer}/>
 	    		<Route path="/" component={AppIndex} />
     		</Switch>
     	</div>
