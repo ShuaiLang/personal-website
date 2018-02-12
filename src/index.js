@@ -9,6 +9,7 @@ import 'babel-polyfill';
 
 import { AppIndex, AsPerson, AsProgrammer } from './components/app';
 import PhotoGallery from './components/photo-gallery/photo_gallery';
+import VideoIndex from './components/videos_index/videos_index';
 import reducers from './reducers';
 
 
@@ -20,6 +21,7 @@ ReactDOM.render(
     <BrowserRouter>
     	<div>
     		<Switch>
+          <Route path="/person/video" component={VideoIndex} />
           <Route path="/person/photo" component={PhotoGallery} />
 	    		<Route path="/person" component={AsPerson} />
 	    		<Route path="/programmer" component={AsProgrammer}/>

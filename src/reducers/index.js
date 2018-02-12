@@ -1,11 +1,12 @@
 import { combineReducers } from 'redux';
 import ImgReducer from './reducer_imgs';
-import SelectImageReducer from './reducer_active_img';
+import VideosReducer from './reducer_videos';
 
 
 const rootReducer = combineReducers({
 	images: ImgReducer,
-	selectImage: SelectImageReducer
+	videos: VideosReducer
+
 });
 
 export default rootReducer;
